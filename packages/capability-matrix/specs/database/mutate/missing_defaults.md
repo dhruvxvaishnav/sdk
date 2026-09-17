@@ -18,7 +18,7 @@ The missing preference is independent of other `Prefer` entries, including `retu
 
 ## Prerequisites
 
-The request must supply a `columns` parameter containing the union of fields across the rows. Without it, each payload row supplies its own field set and an omitted field is left out of the statement rather than governed by this preference.
+The request must supply a `columns` parameter containing the union of fields across the rows. Without it, a bulk payload must carry an identical key set on every row (see [Insert Rows](insert.md)), and a field omitted from every row is left out of the statement entirely, so the database applies its default regardless of this preference.
 
 ## Related
 

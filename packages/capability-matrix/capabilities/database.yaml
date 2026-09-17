@@ -26,13 +26,13 @@ features:
     name: Delete Rows
     description: Delete rows from a table or view that match a filter.
     group: mutate
-  - id: database.mutate.missing_defaults
-    name: Use Defaults for Missing Fields
-    description: Use database column defaults instead of null for fields omitted from bulk insert or upsert rows.
-    group: mutate
   - id: database.mutate.insert
     name: Insert Rows
     description: Insert one or more rows into a table or view.
+    group: mutate
+  - id: database.mutate.missing_defaults
+    name: Use Defaults for Missing Fields
+    description: Use database column defaults instead of null for fields omitted from bulk insert or upsert rows.
     group: mutate
   - id: database.mutate.select_after_mutation
     name: Select After Mutation
